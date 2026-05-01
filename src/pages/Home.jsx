@@ -10,11 +10,11 @@ const Home = () => {
   const newArrivals = products.filter(p => !p.featured).slice(0, 4);
 
   const categoryImages = {
-    'necklaces': '/src/assets/andres-vera-202NAwjisYA-unsplash.jpg',
-    'rings': '/src/assets/segal-jewelry-NsH-CvU0deg-unsplash.jpg',
-    'earrings': '/src/assets/cat-han-Ks6wd1Zyf1o-unsplash.jpg',
-    'bracelets': '/src/assets/nataliya-melnychuk-oO0JAOJhquk-unsplash.jpg',
-    'watches': '/src/assets/jesus-eca-wewzzx11ShI-unsplash.jpg',
+    'necklaces': '/images/andres-vera-202NAwjisYA-unsplash.jpg',
+    'rings': '/images/segal-jewelry-NsH-CvU0deg-unsplash.jpg',
+    'earrings': '/images/cat-han-Ks6wd1Zyf1o-unsplash.jpg',
+    'bracelets': '/images/nataliya-melnychuk-oO0JAOJhquk-unsplash.jpg',
+    'watches': '/images/jesus-eca-wewzzx11ShI-unsplash.jpg',
   };
 
   return (
@@ -23,7 +23,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/max-ducourneau-6uv43p1ePrk-unsplash.jpg" 
+            src="/images/max-ducourneau-6uv43p1ePrk-unsplash.jpg" 
             className="w-full h-full object-cover scale-105"
             alt="Jewelry Hero" 
           />
@@ -90,7 +90,7 @@ const Home = () => {
                 className={`relative h-[400px] overflow-hidden group rounded-3xl ${i === 0 ? 'md:col-span-2' : ''} ${i === 3 ? 'md:col-span-2 lg:col-span-1' : ''}`}
               >
                 <img 
-                  src={categoryImages[cat.slug] || '/src/assets/alex-azabache-y2ErhoE92KA-unsplash.jpg'} 
+                  src={categoryImages[cat.slug] || '/images/alex-azabache-y2ErhoE92KA-unsplash.jpg'} 
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                   alt={cat.name} 
                 />
@@ -151,7 +151,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="relative py-40 overflow-hidden">
         <img 
-          src="/src/assets/nexaro-studio-vbsN7MUXyT4-unsplash.jpg" 
+          src="/images/nexaro-studio-vbsN7MUXyT4-unsplash.jpg" 
           className="absolute inset-0 w-full h-full object-cover"
           alt="CTA"
         />
@@ -169,3 +169,4 @@ const Home = () => {
 };
 
 export default Home;
+
